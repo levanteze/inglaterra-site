@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Inglaterra</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="inglaterra, história da inglaterra, cultura inglesa, localização da inglaterra, cidades inglesas">
+        <meta name="author" content="Davi Sobral Levanteze">
+        <meta name="description" content="Site desenvolvido com uso de CSS, Javascript e Html, com fins acadêmicos, sobre a Inglaterra e sua cultura, história, importância, economia, população">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="img/icon_index.webp">
+        <link rel="stylesheet" type="text/css" href="../site_inglaterra/css/style.css">
+        <script language="javascript" type="text/javascript">
+            function validar(){
+            var nome = form.nome.value;
+            var email = form.email.value;
+            var telefone = form.telefone.value;
+        
+            if(nome == ""){
+            alert('Preencha o campo: Nome');
+            form.nome.focus();
+            return false;
+            }  
+
+            if(email == ""){
+            alert('Preencha o campo: Email');
+            form.email.focus();
+            return false;
+            } 
+
+            if(telefone == ""){
+            alert('Preencha o campo: Telefone');
+            form.telefone.focus();
+            return false;
+            }
+
+            if(nome.length < 5 ){
+            alert('Digite seu nome completo');
+            form.nome.focus();
+            return false;
+            }
+            }
+            </script>
+    </head>
+    <body>
+        <nav class="menu">
+            <ul>
+                <li><a href="../site_inglaterra/index.html" class="link1">Home</a></li>
+                <li><a href="../site_inglaterra/cultura.html" class="link2">Cultura</a></li>
+                <li><a href="../site_inglaterra/historia.html" class="link3">História</a></li>
+                <li><a href="../site_inglaterra/economia.html" class="link4">Economia</a></li>
+                <li><a href="../site_inglaterra/populacao.html" class="link5">População</a></li>
+                <li><a href="../site_inglaterra/curiosidade.html" class="link6">Curiosidade</a></li>
+                <li><a href="../site_inglaterra/contato.html" class="link7">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="image2">
+            <img src="../site_inglaterra/img/curiosidades.jpg" alt="fundo contato">
+        </div>
+        <div class="text" id="l6">Contato</div><br><br>
+        <div class="contato">
+            <div class="content">
+            <table>   
+                <tr>    
+                    <td>    
+                        <form name="form" action="confirma.html" method="post">
+                            <label id="preencha">Preencha os campos abaixo:</label><br><br><br>
+                            Nome:<br>
+                            <input name="nome" type="text" placeholder="    Escreva aqui"><br><br>
+                            Email:<br>
+                            <input name="email" type="text" placeholder="    Escreva aqui"><br><br>
+                            Telefone:<br>
+                            <input name="telefone" type="text" placeholder="    Escreva aqui"><br><br>
+                            Faça sua observação:<br><br>
+                            <textarea>Escreva aqui</textarea><br>
+                            <input type="submit" id="botao1" name="botao1" value="Enviar" onclick="return validar()">
+                            <input type="reset" id="botao2" name="botao2" value="Cancelar">
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div class="subir" align="right"><a href="#"><img src="../site_inglaterra/img/subir.png"></a></div>
+        <div class="rodape">
+            <h5>Davi Sobral 2024-&copyTodos os direitos reservados<br>
+            Trabalho acadêmico sem fins lucrativos</h5>
+        </div>
+    </body>
+</html>
